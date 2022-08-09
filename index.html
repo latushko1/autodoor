@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>AutoDoors</title>
+</head>
+<body>
+    <header>
+        <nav class="container py-[10px] flex justify-between items-center">
+            <img class="pr-2" src="img/logo.svg" alt="logo">
+            <ul class="flex gap-[30px] items-center lg:hidden">
+                <li><a class="text-sm text-primary hover:text-black transition-colors" href="#">Shop</a></li>
+                <li><a class="text-sm text-primary hover:text-black transition-colors" href="#">About</a></li>
+                <li><a class="text-sm text-primary hover:text-black transition-colors" href="#">Our team</a></li>
+                <li><a class="text-sm text-primary hover:text-black transition-colors" href="#">buyer's guides</a></li>
+                <li><a class="text-sm text-primary hover:text-black transition-colors" href="#">Categories</a></li>
+                <li class="bg-green py-[10px] px-[45px] rounded-md"><a class="text-sm text-white hover:underline" href="#">Buy template</a></li>
+                <li class="bg-green py-[12px] px-[45px] rounded-md"><a class="text-sm text-white flex gap-2 justify-center items-center hover:underline" href="#"><img src="img/card.svg" alt="card"><p>Cart</p><div class="card-data">7</div></a></li>
+            </ul>
+            <ul class="mobile">
+                <li><a class="mobile-item text-sm text-primary hover:text-black transition-colors" data-mobile="item" href="#">Shop</a></li>
+                <li><a class="mobile-item text-sm text-primary hover:text-black transition-colors" data-mobile="item" href="#">About</a></li>
+                <li><a class="mobile-item text-sm text-primary hover:text-black transition-colors" data-mobile="item" href="#">Our team</a></li>
+                <li><a class="mobile-item text-sm text-primary hover:text-black transition-colors" data-mobile="item" href="#">buyer's guides</a></li>
+                <li><a class="mobile-item text-sm text-primary hover:text-black transition-colors" data-mobile="item" href="#">Categories</a></li>
+                <li class="mobile-item bg-green py-[10px] px-[45px] rounded-md"><a class="text-sm text-white hover:underline" data-mobile="item" href="#">Buy template</a></li>
+                <li  data-mobile="item" class="mobile-item bg-green py-[12px] px-[45px] rounded-md"><a class="text-sm text-white flex gap-2 justify-center items-center hover:underline" href="#"><img src="img/card.svg" alt="card"><p>Cart</p><div class="card-data">7</div></a></li>
+            </ul>
+            <div class="burger hidden lg:block"  id="nav__menu">
+                <span class="burger-line top-line"></span>
+                <span class="burger-line mid-line"></span>
+                <span class="burger-line bottom-line"></span>
+            </div>
+        </nav>
+    </header">
+
+    <section class="bg-[url(/img/hero-img.jpg)] min-h-screen bg-cover grid place-items-start items-center">
+        <div class="container sm:text-center">
+            <div class="max-w-[490px]">
+                <p class="text-secondary font-base leading-7 tracking-widest">OUTDOOR EXPLORATION</p>
+                <p class="rob text-whiteLight text-[48px] leading-[58px] py-2">Gear for when it actually matters.</p>
+                <p class="text-lightGray text-lg leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-[100px] sm:grid-cols-1 grid grid-cols-2 md:gap-8  sm:text-center gap-[105px] items-center">
+        <img class="sm:hidden" src="img/about-img.jpg" alt="about">
+        <div class="sm:items-center grid sm:place-items-center">
+            <p class="text-secondary font-base leading-7 tracking-widest">Who are we?</p>
+            <h3 class="text-primary rob text-[36px] leading-[43px]">A bit about us.</h3>
+            <p class="text-primary text-base leading-5">We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.</p>
+            <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">Read more<img class="btn-img" src="img/arrow.svg" alt=""></a>
+        </div>
+    </section>
+
+    <section class="bg-whiteLight pb-[100px] relative px-3">
+        <img class="absolute top-0 right-0" src="img/snape-top.svg" alt="">
+        <img class="absolute bottom-0 left-0" src="img/snape-botom.svg" alt="">
+        <div class="container grid place-items-center">
+            <div class="max-w-[550px] text-center py-[100px]">
+                <h5 class="text-secondary font-base leading-7 tracking-widest">Our promise</h5>
+                <h4 class="text-primary rob text-[36px] leading-[43px]">Setting the bar for our products.</h4>
+                <p class="text-primary text-base leading-5">Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-2 sm:gap-[50px] ad:grid-cols-1 gap-[100px]">
+                <div class="max-w-[357px] grid place-items-center text-center">
+                    <img src="img/sustain.svg" alt="">
+                    <h4 class="rob text-[28px] text-primary leading-6 py-2">Sustainable sourcing</h4>
+                    <p class="text-primary text-base leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+
+                <div class="max-w-[357px] grid place-items-center text-center">
+                    <img src="img/lifetime.svg" alt="">
+                    <h4 class="rob text-[28px] text-primary leading-6 py-2">Lifetime warranty</h4>
+                    <p class="text-primary text-base leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+
+                <div class="max-w-[357px] grid place-items-center text-center">
+                    <img src="img/terrain.svg" alt="">
+                    <h4 class="rob text-[28px] text-primary leading-6 py-2">All-terrain tested</h4>
+                    <p class="text-primary text-base leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+
+                <div class="max-w-[357px] grid place-items-center text-center">
+                    <img src="img/quelity.svg" alt="">
+                    <h4 class="rob text-[28px] text-primary leading-6 py-2">Quality assured</h4>
+                    <p class="text-primary text-base leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+
+                <div class="max-w-[357px] grid place-items-center text-center">
+                    <img src="img/premium.svg" alt="">
+                    <h4 class="rob text-[28px] text-primary leading-6 py-2">Premium materials</h4>
+                    <p class="text-primary text-base leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+
+                <div class="max-w-[357px] grid place-items-center text-center">
+                    <img src="img/desing.svg" alt="">
+                    <h4 class="rob text-[28px] text-primary leading-6 py-2">Designed by you</h4>
+                    <p class="text-primary text-base leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-whiteLight pb-[100px]">
+        <div class="container grid place-items-center ">
+            <div class="max-w-[550px] text-center py-[100px]">
+                <h5 class="text-secondary font-base leading-7 tracking-widest">Our promise</h5>
+                <h4 class="text-primary rob text-[36px] leading-[43px]">Setting the bar for our products.</h4>
+                <p class="text-primary text-base leading-5">Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-1 xl:grid-cols-3 items-center place-items-center">
+                <div class="bg-[url(/img/aceesotities.jpg)] rounded-xl h-[473px] min-w-[349px] sm:min-w-[280px] ">
+                    <div class="flex flex-col justify-center items-center text-center pt-[40px]">
+                        <h3 class="rob text-[28px] text-primary mb-[10px]">Accessories</h3>
+                        <p class="max-w-[252px] text-base leading-5 text-primary pb-[20px]">Accessories you didn't know you needed.</p>
+                        <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">View Accessories<img class="btn-img" src="img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="bg-[url(/img/apparel.jpg)] rounded-xl h-[473px] min-w-[349px] sm:min-w-[280px] ">
+                    <div class="flex flex-col justify-center items-center text-center pt-[40px]">
+                        <h3 class="rob text-[28px] text-primary mb-[10px]">Apparel</h3>
+                        <p class="max-w-[252px] text-base leading-5 text-primary pb-[20px]">Check out our line of non-hiking clothes.</p>
+                        <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">View Apparel<img class="btn-img" src="img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="bg-[url(/img/climping.png)] rounded-xl h-[473px] min-w-[349px] sm:min-w-[280px] ">
+                    <div class="flex flex-col justify-center items-center text-center pt-[40px]">
+                        <h3 class="rob text-[28px] text-primary mb-[10px]">Climbing Gear</h3>
+                        <p class="max-w-[252px] text-base leading-5 text-primary pb-[20px]">Climbing gear for every occasion.</p>
+                        <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">View Climbing Gear<img class="btn-img" src="img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="bg-[url(/img/headwear.jpg)] rounded-xl h-[473px] min-w-[349px] sm:min-w-[280px] ">
+                    <div class="flex flex-col justify-center items-center text-center pt-[40px]">
+                        <h3 class="rob text-[28px] text-primary mb-[10px]">Headwear</h3>
+                        <p class="max-w-[252px] text-base leading-5 text-primary pb-[20px]">Our beanies are so comfy you won't believe it.</p>
+                        <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">View Headwear<img class="btn-img" src="img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="bg-[url(/img/hiking.jpg)] rounded-xl h-[473px] min-w-[349px] sm:min-w-[280px]">
+                    <div class="flex flex-col justify-center items-center text-center pt-[40px]">
+                        <h3 class="rob text-[28px] text-primary mb-[10px]">Hiking Gear</h3>
+                        <p class="max-w-[252px] text-base leading-5 text-primary pb-[20px]">Desert or mountain? Doesn't matter.</p>
+                        <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">View Hiking Gear<img class="btn-img" src="img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="bg-[url(/img/jackets.jpg)] rounded-xl h-[473px] min-w-[349px] sm:min-w-[280px] ">
+                    <div class="flex flex-col justify-center items-center text-center pt-[40px]">
+                        <h3 class="rob text-[28px] text-primary mb-[10px]">Jackets</h3>
+                        <p class="max-w-[252px] text-base leading-5 text-primary pb-[20px]">Our jackets are perfect for every season.</p>
+                        <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">View Jackets<img class="btn-img" src="img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">Show all categories<img class="btn-img" src="img/arrow.svg" alt=""></a>
+    </section>
+
+    <section class="bg-[url(/img/check-bg.svg)] bg-cover min-h-[50vh] w-full grid place-items-center items-center">
+        <div class="max-w-[550px] text-center">
+            <h4 class="text-white text-sm uppercase">Shop</h4>
+            <p class="text-secondary font-base leading-7 tracking-widest">Check out our products.</p>
+            <p class="text-white text-base mb-[21px] ">Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+            <a class="text-primary px-[18px] py-[10px] bg-white rounded-md hover:text-black transition-colors" href="#">Visit shop</a>
+        </div>
+    </section>
+
+    <section class="mt-[100px] grid place-items-center lg:text-center lg:items-center">
+        <div class="container">
+            <div class="max-w-[550px] lg:max-w-none ">
+                <h5 class="text-secondary font-base leading-7 tracking-widest">Buyer's guides</h5>
+                <h3 class="text-primary rob text-[36px] leading-[43px]">Navigating our offering.</h3>
+                <p class="text-primary text-base mb-[21px] ">Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-1 lg:place-items-center lg:items-center lg:gap-10">
+                <div class="max-w-[400px]">
+                    <div class="flex flex-col gap-2">
+                        <img src="img/nav-1.jpg" alt="nav">
+                        <p class="text-[20px] text-primary">3 climbing accessories for the climber that has everything</p>
+                    </div>
+                    <div class="gap-2 flex items-center justify-between mt-4">
+                        <div class="flex items-center justify-center  gap-2">
+                            <img class="rounded-xl" src="img/profile-1.jpg" alt="profile">
+                           <div>
+                            <p class="rob text-sm text-primary">Alex Jenna</p>
+                            <p class="rob text-sm text-secondary">QA</p>
+                           </div>
+                        </div>
+                        <p class="text-gray text-sm">
+                            October 18, 2021
+                        </p>
+                    </div>
+                </div>
+
+                <div class="max-w-[400px]">
+                    <div class="flex flex-col gap-2">
+                        <img src="img/nav-2.jpg" alt="nav">
+                        <p class="text-[20px] text-primary">Biking accessories for the <br> beaten path</p>
+                    </div>
+                    <div class="gap-2 flex items-center justify-between mt-4">
+                        <div class="flex items-center justify-center  gap-2">
+                            <img class="rounded-xl" src="img/profile-2.jpg" alt="profile">
+                            <div>
+                                <p class="rob text-sm text-primary">Woodie Brandon</p>
+                                <p class="rob text-sm text-secondary">Product Designer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray text-sm">
+                            October 18, 2021
+                        </p>
+                    </div>
+            </div>
+        </div>
+     </div>
+        <a class=" pt-[50px] text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">Show all categories<img class="btn-img" src="img/arrow.svg" alt=""></a>
+    </section>
+
+
+    <section class="container py-[100px] sm:grid-cols-1 grid grid-cols-2 md:gap-8  sm:text-center gap-[105px] items-center">
+        <img class="sm:hidden" src="img/sigarets.jpg" alt="about">
+        <div class="sm:items-center grid sm:place-items-center">
+            <p class="text-secondary font-base leading-7 tracking-widest">Some light reading</p>
+            <h3 class="text-primary rob text-[36px] leading-[43px] ">Subscribe to our magazine today.</h3>
+            <p class="text-primary text-base leading-5 ad:text-xs">We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et..</p>
+            <a class="text-base leading-5 text-primary mt-3 flex gap-4 btn" href="#">Read more<img class="btn-img" src="img/arrow.svg" alt=""></a>
+        </div>
+    </section>
+   
+
+    <footer class="bg-primary grid py-[100px] ">
+        <img class="mx-auto" src="img/logo-white.svg" alt="logo">
+        <div class="flex mt-[70px] container md:flex-col-reverse md:items-center md:text-center">
+            <div class="flex gap-10 ">
+                <ul class="flex flex-col gap-[9px]">
+                    <li class="text-secondary uppercase text-sm ad:text-[10px]">Pages</li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Home</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Shop</a></li>
+                    <li><a class="text-white text-sm ad:text-xs" href="#">Categories</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Buyer's guides</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">404</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Password</a></li>
+                </ul>
+    
+                <ul class="flex flex-col gap-[9px]">
+                    <li class="text-secondary uppercase text-sm ad:text-[10px]">Gear categories</li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Hiking Gear</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Climbing Gear</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Jackets</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Accessories</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Apparel</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Headwear</a></li>
+                </ul>
+    
+                <ul class="flex flex-col gap-[9px]">
+                    <li class="text-secondary uppercase text-sm ad:text-[10px]">Company</li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">About us</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Our team</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Contact</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Terms & Conditions</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Style guide</a></li>
+                    <li><a class="text-white text-sm ad:text-[10px]" href="#">Licenses</a></li>
+                </ul>
+            </div>
+
+            <div class="max-w-[458px] items-center ml-[150px] md:ml-0 md:mb-[50px]">
+                <h4 class="text-white text-sm">Newsletter</h4>
+                <p class="text-secondary text-sm">Subscribe to our (infrequent) newsletter where we share news about upcoming listings and projects.</p>
+            </div>
+        </div>
+        <div class="flex justify-between container mt-[30px] md:flex-col md:items-center">
+            <p class="text-white text-sm md:mb-[50px] ad:text-xs">© Outdoor Exploration, LLC. All rights reserved. Powered by Webflow.</p>
+            <div class="flex gap-[20px]">
+                <a href="#"><img src="img/Linkedin-Icon.svg" alt="icon"></a>
+                <a href="#"><img src="img/Facebook-Icon.svg" alt="icon"></a>
+                <a href="#"><img src="img/Instagram-Icon.svg" alt="icon"></a>
+                <a href="#"><img src="img/Twitter-Icon.svg" alt="icon">   </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
